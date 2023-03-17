@@ -5,6 +5,11 @@ server:
     include-stacktrace: never
   port: 8080
 
+app:
+  jwt:
+    secret: RandomSecretKey1234567890!RandomSecretKey1234567890!RandomSecretKey1234567890!RandomSecretKey1234567890!
+    expiration-in-ms: 86400000
+
 spring:
   application:
     name: SpringBootShop
@@ -21,3 +26,7 @@ spring:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
     show-sql: true
+  main:
+    allow-circular-references: true
+
+

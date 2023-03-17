@@ -1,9 +1,10 @@
 package com.brvsk.shop.model;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 
 import java.time.LocalDateTime;
 
@@ -62,3 +63,4 @@ public class Purchase {
     )
     private LocalDateTime purchaseTime;
 }
+
