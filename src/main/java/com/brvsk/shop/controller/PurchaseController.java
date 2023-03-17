@@ -1,0 +1,30 @@
+package com.brvsk.shop.controller;
+
+import com.brvsk.shop.model.Purchase;
+import com.brvsk.shop.security.UserPrinciple;
+import com.brvsk.shop.service.PurchaseService;
+import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("api/purchase")
+@AllArgsConstructor
+public class PurchaseController {
+
+    private final PurchaseService purchaseService;
+
+    @PostMapping
+    public ResponseEntity<?> savePurchase(@RequestBody Purchase purchase)
+    {
+        return new ResponseEntity<>(purchaseService.savePurchase(purchase), HttpStatus.CREATED);
+    }
+
+    @GetMapping
+    public ResponseEntity<?> getAllPurchasesOfUser(@AuthenticationPrincipal UserPrinciple userPrinciple)
+    {
+        return ResponseEntity.ok(purchaseService.findPurchaseItemsOfUser(userPrinciple.getId()));
+    }
+}

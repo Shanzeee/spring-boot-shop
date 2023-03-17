@@ -4,11 +4,11 @@ import com.brvsk.shop.model.Role;
 import com.brvsk.shop.model.User;
 import com.brvsk.shop.repository.UserRepository;
 import com.brvsk.shop.service.interfaces.UserServiceInterface;
-import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.time.LocalDateTime;
 import java.util.Optional;
 
