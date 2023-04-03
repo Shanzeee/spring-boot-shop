@@ -1,4 +1,4 @@
-package com.brvsk.shop.service;
+package com.brvsk.shop.security;
 
 import com.brvsk.shop.model.User;
 import com.brvsk.shop.security.UserPrinciple;

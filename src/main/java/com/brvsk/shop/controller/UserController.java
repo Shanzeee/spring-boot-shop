@@ -1,10 +1,9 @@
 package com.brvsk.shop.controller;
 
-import com.brvsk.shop.model.Role;
+import com.brvsk.shop.utils.Role;
 import com.brvsk.shop.security.UserPrinciple;
 import com.brvsk.shop.service.UserService;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.PathVariable;

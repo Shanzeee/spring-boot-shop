@@ -1,9 +1,7 @@
-package com.brvsk.shop.controller;
+package com.brvsk.shop.security;
 
 import com.brvsk.shop.model.User;
-import com.brvsk.shop.service.AuthenticationService;
 import com.brvsk.shop.service.UserService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

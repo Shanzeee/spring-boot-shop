@@ -1,9 +1,7 @@
 package com.brvsk.shop.model;
 
-import lombok.AllArgsConstructor;
+import com.brvsk.shop.utils.Role;
 import lombok.Data;
-import lombok.Generated;
-import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;

@@ -1,6 +1,6 @@
 package com.brvsk.shop.repository;
 
-import com.brvsk.shop.model.Role;
+import com.brvsk.shop.utils.Role;
 import com.brvsk.shop.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

@@ -1,6 +1,6 @@
 package com.brvsk.shop.service;
 
-import com.brvsk.shop.model.Role;
+import com.brvsk.shop.utils.Role;
 import com.brvsk.shop.model.User;
 import com.brvsk.shop.repository.UserRepository;
 import com.brvsk.shop.service.interfaces.UserServiceInterface;
